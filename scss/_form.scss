@@ -1,0 +1,16 @@
+// input field
+
+.ta_input{
+    font-size: 16px;
+    line-height: 26px;
+    padding: 17px 30px;
+    font-weight: $fw-regular;
+    border-radius: 10px;
+    border: none;
+    min-width: 420px;
+    width: 100%;
+    &:focus-visible{
+        outline: none;
+    }
+}
+

@@ -1,0 +1,220 @@
+// header style start here
+.ta_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+}
+
+.ta_navbar{
+    padding: 45px 0 20px 0;
+    .navbar-brand{
+        padding: 0;
+        margin: 0;
+    }
+    .ta_logo {
+        width: 115px;
+        height: 34px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-size: 17px;
+                line-height: 27px;
+                font-weight: $fw-medium;
+                padding: 8px 25px;
+                color: $primary-color;
+            }
+        }
+    }
+    .btn_wrap{
+        .site_btn{
+            font-size: 17px;
+            line-height: 27px;
+            border-radius: 5px;
+            min-width: 105px;
+            padding: 6px 20px;
+        }
+    }
+    .btns_wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .dropdown{
+        padding-left: 17px;
+        .btn{
+            background-color: transparent;
+            color: $primary-color;
+            font-size: 17px;
+            line-height: 27px;
+            font-weight: $fw-medium;
+            padding: 8px 25px;
+            border: none;
+        }
+        .dropdown-toggle{
+            &::after{
+                content: "";
+                background-image: url("../../assets/images/icons/down_arrow_icon.svg");
+                width: 10px;
+                height: 5px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                border: none;
+                margin-left: 0;
+                position: relative;
+                top: 1px;
+            }
+        }
+        .dropdown-menu{
+            min-width: 100px;
+            li{
+                .dropdown-item{
+                    font-size: 17px;
+                    line-height: 27px;
+                    font-weight: $fw-medium;
+                }
+            } 
+        }
+    }
+    .navbar-toggler{ 
+        border: none;
+        &:focus{
+            box-shadow: none;
+        }
+        &:focus-visible{
+            outline: none;
+        }
+        &[aria-expanded="true"]{
+            .line{
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+                &:nth-child(2){
+                   width: 0;
+                   opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                    bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+.header_scrolled .ta_header{
+    background-color: $secondary-color;
+}
+
+// header style end here
+
+// responsive style start here
+
+@media (max-width: 1199px){
+    .ta_navbar {
+        padding: 30px 0 20px 0;
+    }
+    .ta_navbar .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 20px;
+    }
+    .ta_navbar .btns_wrapper {
+        gap: 20px;
+    }  
+    .ta_navbar .dropdown {
+        padding-left: 10px;
+    }
+    .ta_navbar .btn_wrap .site_btn {
+        font-size: 16px;
+        line-height: 24px;
+        min-width: 95px;
+    }
+    .ta_navbar .dropdown .btn, .ta_navbar .dropdown .dropdown-menu li .dropdown-item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+// hamburger style start here
+.hamburger_wrap{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    .line{
+        width: 100%;
+        height: 3px;
+        background-color: $primary-color;
+        border-radius: 20px;
+        position: absolute;
+        transition: 0.5s ease;
+        &:nth-child(1){ 
+            top: 0;
+        }
+        &:nth-child(2){
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:nth-child(3){
+            bottom: 0;
+        }
+    }
+}
+// hamburger style end here
+
+@media (max-width: 991px){
+    .ta_navbar .ta_logo {
+        width: 95px;
+        height: auto;
+    }
+    .ta_navbar {
+        background-color: $secondary-color;
+        padding: 15px 0;
+    }
+    .ta_navbar .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 7px 10px;
+    }
+    .ta_navbar .btn_wrap .site_btn {
+        font-size: 14px;
+        line-height: 20px;
+        min-width: 75px;
+        padding: 5px 12px;
+    }
+    .ta_navbar .btns_wrapper {
+        gap: 12px;
+    }
+    .ta_navbar .dropdown {
+        padding-left: 0;
+    }
+    .ta_navbar .dropdown .btn {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 6px 12px;
+    }
+    .ta_navbar .dropdown .dropdown-toggle::after {
+        width: 8px;
+        height: 4px;
+    }
+    .ta_navbar .dropdown .dropdown-menu li .dropdown-item{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .ta_navbar .dropdown .dropdown-menu {
+        min-width: 80px;
+    }
+}
+
+// responsive style end here

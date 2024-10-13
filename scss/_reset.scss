@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, a{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: $fw-medium;
+    margin-bottom: 0;
+}
+
+h1{
+    font-family: "Volkhov", serif;
+    font-size: 84px;
+    line-height: 89px;
+    font-weight: $fw-bold;
+    letter-spacing: -0.4px;
+}
+h2{
+    font-family: "Volkhov", serif;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: $fw-bold;
+}
+h3{
+    font-size: 33px;
+    line-height: 54px;
+    font-weight: $fw-semi-bold;
+}
+h4{
+    font-size: 23px;
+    line-height: 33px;
+    font-weight: $fw-bold;
+}
+h5{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: $fw-bold;
+}
+h6{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: $fw-semi-bold;
+}
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+ol, ul, dl {
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px){
+    h1{
+        font-size: 64px;
+        line-height: 70px;
+    }
+    h2{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    h3{
+        font-size: 30px;
+        line-height: 46px;
+    }
+    h4{
+        font-size: 21px;
+        line-height: 31px;
+    }
+    h5{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    h6{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 991px){    
+    .container-md, .container-sm, .container {
+        max-width: unset; 
+        gap: 8px;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    h4{
+        font-size: 19px;
+        line-height: 29px;
+    }
+    h5{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    h6{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h3{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    h5{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    h6{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 23px;
+    }
+}

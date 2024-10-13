@@ -1,0 +1,398 @@
+// custom style start here
+.ta_content{
+    padding: 110px 0 0 0;
+}
+
+// banner style start here
+.ta_banner{
+    position: relative;
+    &::after{
+        content: "";
+        background-image: url("../../assets/images/background/banner_background_img.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -110px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+.banner_content_wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .ta_article{
+        h5{
+            color: $orange-color;
+            text-transform: uppercase;
+            margin-bottom: 23px;
+        }
+        h1{
+            color: $primary-color-100;
+            margin-bottom: 25px;
+            .underline{
+                position: relative;
+                &::after{
+                    content: "";
+                    background-image: url("../../assets/images/icons/underline_icon.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: bottom;
+                    position: absolute;
+                    width: 385px;
+                    height: 12px;
+                    bottom: 18px;
+                    left: -35px;
+                    z-index: -1;
+                }
+            }
+        }
+        p{
+            color: $primary-color-400;
+            margin-bottom: 30px;
+        }
+    }
+    .play_icon_wrap{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a{
+            font-size: 17px;
+            line-height: 27px;
+            color: $secondary-color-100;
+        }
+    }
+    .play_icon {
+        width: 52px;
+        height: 52px;
+        background: $orange-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .btn_icon_wrap{
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+}   
+
+.banner_image_wrap{
+    width: 636px;
+    height: auto;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// banner style end here
+
+// category style start here
+.ta_category {
+    padding: 100px 0;
+    .ta_article{
+        text-align: center;
+        margin-bottom: 65px;
+        h6{
+            color: $primary-color-400;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2{
+            color: $primary-color-200;
+            text-transform: capitalize;
+        }
+    }
+}
+// category style end here
+
+// destination style start here
+.ta_destinations{
+    padding: 30px 0 80px 0;
+}
+
+.ta_destinations .ta_article{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.destinations_card_wrap {
+    background-image: url("../../assets/images/thumbnail/decorate_img.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.ta_destinations .ta_article h6{
+    color: $primary-color-400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.ta_destinations .ta_article h2{
+    color: $primary-color-200;
+    text-transform: capitalize;
+}
+// destination style end here
+
+// book your ticket style start here
+.ta_book_your_ticket {
+    padding: 100px 0;
+}
+
+.ta_book_your_ticket .ta_article h6{
+    color: $primary-color-400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.ta_book_your_ticket .ta_article h2{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.ta_trip_card{
+    background-color: $white-color;
+    border-radius: 26px;
+    padding: 25px;
+    box-shadow: 0 4px 8px $black-color-200;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 50px;
+    .img_wrap {
+        width: 350px;
+        height: auto;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        margin-bottom: 20px;
+    }
+    .trip_content{
+        h6{
+            letter-spacing: 0.25px;
+            margin-bottom: 10px;
+        }
+        .date{
+            display: block;
+            color: $secondary-color;
+            margin-bottom: 12px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            li{
+                .circle{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $white-color-100;
+                }
+            }
+        }
+        .peoples{
+            font-size: 16px;
+            line-height: 26px;
+            color: $secondary-color;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .like{
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+
+.book_your_ticket {
+    display: block;
+    content: "";
+    background-image: url("../../assets/images/background/book_ticket_bg.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    right: 0;
+}
+
+.ongoing_trip {
+    padding: 20px;
+    box-shadow: 0 4px 8px $black-color-200;
+    max-width: 270px;
+    width: 100%;
+    border-radius: 18px; 
+    position: absolute;
+    background-color: $white-color;
+    right: 50px;
+    bottom: 135px;
+    .img_wrap{
+        width: 50px;
+        height: 50px;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content_wrap{
+        h6{
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            color: $secondary-color;
+        }
+        h5{
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 18px;
+            color: $secondary-color;
+            margin-bottom: 5px;
+            span{
+                color: $primary-color;
+            }
+        }
+        .progress{
+            height: 5px;
+            .progress-bar{
+                background-color: $primary-color-900;
+            }
+        }
+    }
+}
+// book your ticket style start here
+
+// testimonail style start here
+.ta_testimonial{
+    .row{
+        gap: 70px;
+    }
+    padding: 100px 0;
+    .ta_article{
+        h6{
+            color: $primary-color-400;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h2{
+            text-transform: capitalize;
+        }
+    }
+}
+// testimonail style end here
+
+// company logo style start here
+.ta_company_logo{
+    padding: 0 0 50px 0;
+}
+// company logo style end here
+
+// contact us style start here 
+.ta_contact_us {
+    padding: 50px 0 100px 0;
+}
+
+.ta_contact_us_wrapper{
+    background-color: $white-color-200;
+    padding: 70px;
+    border-radius: 100px 25px 25px 25px;
+    position: relative;
+    .contact_us_content{
+        h3{
+            color: $primary-color-400;
+            text-align: center;
+            max-width: 880px;
+            margin: 0 auto;
+            margin-bottom: 70px;
+        }
+        .ta_form_wrap{
+            .ta_input_btn{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                justify-content: center;
+                .input_img_wrap{
+                    position: relative;
+                    .ta_input{
+                        padding: 17px 30px 17px 60px;
+                    }
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .send_button {
+        width: 70px;
+        height: 70px;
+        background-color: $primary-color-600;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        a{
+            width: 35px;
+            height: auto;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .decorate_img3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        max-width: 264px;
+        width: 100%;
+        height: auto;
+    }
+    .decorate_img2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+// contact us style start here 
+
+// custom style end here
