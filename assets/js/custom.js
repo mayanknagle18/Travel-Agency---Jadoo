@@ -15,8 +15,8 @@ $(document).ready(function(){
         vertical: true,
         verticalSwiping: true,
         focusOnSelect: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../assets/images/icons/up_arrow_icon.svg" alt="Previous"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../assets/images/icons/down_arrow_icon.svg" alt="Next"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="./assets/images/icons/up_arrow_icon.svg" alt="Previous"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="./assets/images/icons/down_arrow_icon.svg" alt="Next"></button>',
         responsive: [
             {
                 breakpoint: 767,
